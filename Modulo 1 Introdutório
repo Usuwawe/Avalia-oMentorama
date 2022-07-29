@@ -1,0 +1,155 @@
+1)
+print('Lucas Gouvêa Casagrande')
+
+2)
+a = 2
+b = 5
+r = a * b
+print('O resultado é %d' %r)
+
+3)
+a = 2
+b = 5
+c = 5
+r = a + b +c
+print('O resultado é %d' %r)
+
+4)
+p=float(input('Digite o primeiro numero:'))
+s=float(input('Digite o segundo numero:'))
+o=input('Qual operação deseja +, -, * ou /?')
+if o == '+':
+    r=p+s
+elif o=='-':
+     r=p-s
+elif o == '/':
+    r=p/s
+elif o == '*':
+    r=p*s
+print('O resultado é %d' %r)
+
+5)
+A-
+i = 1
+while i<11:
+    print(i)
+    i+=1
+
+
+B-
+contador = 1 
+for elemento in range (1,11):
+    print(contador)
+    contador = contador +1
+6)
+A-
+par=0
+impar=0
+x=1
+while x <=10:
+    print(x)
+    if x%2==1:
+        par+=1
+    else:
+        impar+=1
+    x+=1
+print(f'A quantidade de numeros impares é igual a { impar } e a de numeros pares é igual a { par }')
+B-
+par=0
+impar=0
+for x in range(1,11):
+    if x%2==1:
+        impar+=1
+    else:
+        par+=1
+print(f'A quantidade de numeros impares é igual a { impar } e a de numeros pares é igual a { par }')
+
+7)
+A-
+a=
+b=
+c=
+delta=(b*b-4*c*a)
+if a == 0:
+    print('a deve ser diferente de zero')
+elif delta <0:
+    print('Raiz inexistente')
+else:
+    bha1=(-b+(delta)**(1/2))/2*a
+    bha2=(-b-(delta)**(1/2))/2*a
+    print(bha1)
+    print(bha2)
+
+B-
+
+C-
+A-
+a=1
+b=-6
+c=10
+delta=(b*b-4*c*a)
+if a == 0:
+    print('a deve ser diferente de zero')
+elif delta <0:
+    print('Raiz inexistente')
+else:
+    bha1=(-b+(delta)**(1/2))/2*a
+    bha2=(-b-(delta)**(1/2))/2*a
+    print(bha1)
+    print(bha2)
+
+8-
+a=float(input('Digite nº a:'))
+b=float(input('Digite nº b:'))
+c=float(input('Digite nº c:'))
+delta=(b*b-4*c*a)
+if a == 0:
+    print('a deve ser diferente de zero')
+elif delta <0:
+    print('Raiz inexistente')
+else:
+    bha1=(-b+(delta)**(1/2))/2*a
+    bha2=(-b-(delta)**(1/2))/2*a
+    print(bha1)
+    print(bha2)
+
+9)
+A-
+p=str(input('Digite uma palavra:'))
+m=p.upper()
+print(m)
+
+B-
+print(m[::-1])
+
+C- 
+p=str(input('Digite uma palavra:'))
+m=p.upper()
+print(m)
+print(m[::-1])
+l=['A','E','I','O','U']
+for x in m:
+    if str(x) == [l] :
+        continue
+    print(x)
+
+10-
+divida=float(input('Valor da dívida:'))
+taxa=float(input('Valor do juros:'))
+pagamento=float(input('Quando pagará por mês?'))
+mes=1
+if (divida*(taxa/100)> pagamento):
+    print('Valor muito baixo!')
+else:
+    saldo = divida
+    juros_pago=0
+    while saldo >= pagamento:
+        juros = saldo * (taxa/100)
+        saldo = saldo + juros - pagamento
+        juros_pago = juros_pago + juros
+        print('Saldo da divida do mês %d é de R$%6.2f' %(mes,saldo))
+        mes+=1
+    print('Para pagar a divida de R$%6.2f, a %.f %% de juros'%(divida, taxa))
+    print('São necessarios, %d meses, pagando um total de R$%6.2f de juros' %(mes-1, juros_pago))
+    print('Saldo residual de %6.2f a pagar'%(saldo))
+
