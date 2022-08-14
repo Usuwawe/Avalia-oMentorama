@@ -1,3 +1,25 @@
+1.
+
+#dic = {}
+tidade=cont=0
+lista = []
+lidade = []
+while True:
+    nome = input('Qual seu nome?')
+    sexo = input('Qual seu sexo [M/F]?').upper()[0]
+    idade = int(input('Qual sua idade?'))
+    tidade +=idade
+    novo = input('Novo dastro[S/N]?').upper()[0]
+    dict={'Nome': f'{nome}','sexo': sexo,'Idade': idade}
+    lista.append(dict)
+    cont+=1
+    if 'N' in novo:
+        break
+medidade=(tidade/cont)
+
+
+print(len(lista))
+print(medidade)
 
 
 2.
