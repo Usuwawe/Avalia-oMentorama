@@ -45,3 +45,20 @@ D- print(setx-sety)
 cor=([('color1','red'),('color2','Green'),('color3','blue')])
 cor.insert(0,([('color4','orange')]))
 print(cor)
+
+8.
+men = input('Digite uma mensagem:')
+n1 = float(input('Digite primeiro numero: '))
+n2 = float(input('Digite segundo numero: '))
+
+def tela(x):
+    return print(x)
+
+def mult(x,y):
+    r = x * y
+    return print(r)
+
+a)
+tela(men)
+b)
+mult(n1,n2)
