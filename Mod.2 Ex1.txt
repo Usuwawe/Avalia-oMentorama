@@ -1,5 +1,4 @@
 
-#dic = {}
 tidade=cont=sexo=0
 lista = []
 lidade = []
@@ -27,21 +26,15 @@ while True:
     if 'N' in novo:
         break
 medidade=(tidade/cont)
-print(len(lista))
-print(medidade)
-for p in lista :
-    if p['idade'] >= medidade:
-        print(idade)
-        print(f'{p["nome"]}',end = ' ')
-
 print((f'Foram cadastrados {len(lista)} pessoas.'))
 print(f'A media de idade é de {medidade}.')
 print((f'As mulheres são:'))
 for x in mulheres:
     print(x)
 print(f'Pessoas acima da idade média:')
-print(dict)
-
+for p in lista:
+    if p['Idade'] >= medidade:
+        print(p["Nome"],end = ' - ')
 
 2.
 tupla=(1,2,3,4)
