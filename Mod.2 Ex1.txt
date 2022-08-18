@@ -1,25 +1,46 @@
-1.
 
 #dic = {}
-tidade=cont=0
+tidade=cont=sexo=0
 lista = []
 lidade = []
+mulheres = []
 while True:
     nome = input('Qual seu nome?')
-    sexo = input('Qual seu sexo [M/F]?').upper()[0]
-    idade = int(input('Qual sua idade?'))
+    while True:
+        sexo = input('Qual seu sexo [M/F]?').upper()[0]
+        if sexo in 'MF':
+            break
+    while True:
+        idade = float(input('Qual sua idade?'))
+        break
     tidade +=idade
-    novo = input('Novo dastro[S/N]?').upper()[0]
-    dict={'Nome': f'{nome}','sexo': sexo,'Idade': idade}
+    while True:
+        novo = input('Novo cadastro[S/N]?').upper()[0]
+        if novo in 'NS':
+            break
+    dict={'Nome': nome,'sexo': sexo,'Idade': idade}
     lista.append(dict)
     cont+=1
+    if sexo == "F":
+        mulheres.append(nome)
+
     if 'N' in novo:
         break
 medidade=(tidade/cont)
-
-
 print(len(lista))
 print(medidade)
+for p in lista :
+    if p['idade'] >= medidade:
+        print(idade)
+        print(f'{p["nome"]}',end = ' ')
+
+print((f'Foram cadastrados {len(lista)} pessoas.'))
+print(f'A media de idade é de {medidade}.')
+print((f'As mulheres são:'))
+for x in mulheres:
+    print(x)
+print(f'Pessoas acima da idade média:')
+print(dict)
 
 
 2.
