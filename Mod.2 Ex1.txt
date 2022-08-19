@@ -1,4 +1,4 @@
-
+1.
 tidade=cont=0
 sexo=0
 lista = []
@@ -61,6 +61,13 @@ cor=([('color1','red'),('color2','Green'),('color3','blue')])
 cor.insert(0,([('color4','orange')]))
 print(cor)
 
+6.
+
+def rigth_justify():
+    s=input('Digite uma palavra:')
+    print(f'{s:>70}')
+rigth_justify()
+
 8.
 men = input('Digite uma mensagem:')
 n1 = float(input('Digite primeiro numero: '))
@@ -77,3 +84,20 @@ a)
 tela(men)
 b)
 mult(n1,n2)
+
+9.
+cont=-1
+lista = ['A',1,'E',5,'T',7,'W',8,'G']
+for x in lista:
+    print(x, end='')
+print('>', end=' ')
+for x in lista:
+    cont+=1
+    if cont %2 ==0:
+        print(x , end='')
+print('', end='')
+for x in lista[::-1]:
+    cont += 1
+    if cont % 2 ==0:
+        print(x, end='')
+
