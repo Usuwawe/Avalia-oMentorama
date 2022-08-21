@@ -1,4 +1,5 @@
 1.
+
 tidade=cont=0
 sexo=0
 lista = []
