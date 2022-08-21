@@ -1,4 +1,4 @@
-# Avaliacao Mentorama
+# Avaliação Mentorama
 Lista de exercícios de avaliação, dos módulos do curso Python do Zero ao Pro, da escola Mentorama. Ministrado pelo professor Felipe Assunçãoa pelo Professor. 
 EXERCICIOS	
 
