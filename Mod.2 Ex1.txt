@@ -69,6 +69,17 @@ def rigth_justify():
     print(f'{s:>70}')
 rigth_justify()
 
+7.
+a)
+def do_twice(f):
+    f()
+    f()
+def print_spam():
+    print('spam')
+do_twice(print_spam)
+
+
+
 8.
 men = input('Digite uma mensagem:')
 n1 = float(input('Digite primeiro numero: '))
@@ -87,18 +98,27 @@ b)
 mult(n1,n2)
 
 9.
-cont=-1
-lista = ['A',1,'E',5,'T',7,'W',8,'G']
+lista = ['A','1','E','5','T','7','W','8','G']
 for x in lista:
     print(x, end='')
 print('>', end=' ')
-for x in lista:
-    cont+=1
-    if cont %2 ==0:
-        print(x , end='')
+for a in lista:
+  if (a.isnumeric()) == False:
+    print(a , end='')
 print('', end='')
-for x in lista[::-1]:
-    cont += 1
-    if cont % 2 ==0:
-        print(x, end='')
-
+for b in lista[::-1]:
+  if (b.isnumeric()) == True:
+    print(b , end='')
+    
+    
+lista = ['3','C','9','H','4','Q','6']
+for x in lista:
+    print(x, end='')
+print('>', end=' ')
+for a in lista:
+  if (a.isnumeric()) == False:
+    print(a , end='')
+print('', end='')
+for b in lista[::-1]:
+  if (b.isnumeric()) == True:
+    print(b , end='')
