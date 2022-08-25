@@ -1,0 +1,72 @@
+1.
+class bola:
+  def __init__(self, cor, circunferencia, material):
+    self.cor = cor
+    self.circunferencia = circunferencia
+    self.material = material
+
+  def alteradados(self, cor= None):
+    if cor is not None:
+      self.cor=cor
+  def mostrardados(self):
+    print(f'Cor {self.cor} , circunferencia {self.circunferencia} e material {self.material}')
+  
+a)
+b1=bola('Azul', '15', 'Pano')
+b1.mostrardados()
+
+b)
+b1.alteradados('branca')
+
+b1.mostrardados()
+
+2.
+from traitlets.config.loader import load_pyconfig_files
+class quadrado:
+  def __init__(self,lado):
+    self.lado=lado
+
+  def alterar (self, lado = None):
+    if cor is not None:
+      self.lado
+  def mostrar(self):
+    print(f' Lado {self.lado}.')
+  def area(self):
+    a=float(self.lado)**2
+    print(f'A area do quadrado de lado {self.lado} é {a} .')
+q1=quadrado('7')
+q1.mostrar()
+q1.area()
+
+3.
+class retangulo:
+  def __int__ (self,base,altura):
+    self.base=base
+    self.altura=altura
+  
+  def mudarret (self, base = None , altura = None):
+    self.base = float(input('Qual o comprimento do comodo[m]? '))
+    if self.base is not None:
+      self.base
+    self.altura = float(input('Qual a largura do comodo[m]?'))
+    if self.altura is not None:
+      self.altura
+    
+  def mostrarret(self):
+    print(f'Base {self.base} altura {self.altura}')
+
+  def arearet(self):
+    ar = float(self.base)*float(self.altura)
+    print(f'Os metros quadrados de piso será {ar}.')
+  
+  def perimetroret(self):
+    per = float(self.base)*2 + float(self.altura)*2
+    print(f'Os metros de rodapé são {per}')
+
+c1=retangulo()
+
+c1.mudarret()
+
+c1.arearet()
+
+c1.perimetroret()
