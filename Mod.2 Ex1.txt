@@ -1,6 +1,8 @@
 1.
 
-tidade=cont=sexo=0
+tidade=0
+cont=0
+sexo=0
 lista = []
 lidade = []
 mulheres = []
