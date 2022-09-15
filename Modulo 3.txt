@@ -12,7 +12,7 @@ class bola:
     print(f'Cor {self.cor} , circunferencia {self.circunferencia} e material {self.material}')
   
 a)
-b1=bola('Azul', '15', 'Pano')
+b1=bola('Azul', '14', 'Pano')
 b1.mostrardados()
 
 b)
