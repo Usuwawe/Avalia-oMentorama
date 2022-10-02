@@ -133,7 +133,7 @@ for x in m:
         continue
     print(x)
 
-10-
+10.
 divida=float(input('Valor da dívida:'))
 taxa=float(input('Valor do juros:'))
 pagamento=float(input('Quando pagará por mês?'))
